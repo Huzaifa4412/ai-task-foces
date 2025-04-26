@@ -1,5 +1,4 @@
 "use client";
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
@@ -8,7 +7,6 @@ import { ThemeProvider } from "next-themes";
 import { Urbanist } from "next/font/google";
 import "../globals.css";
 const urbanist = Urbanist({ subsets: ["latin"] });
-
 import ToasterContext from "../context/ToastContext";
 
 export default function RootLayout({

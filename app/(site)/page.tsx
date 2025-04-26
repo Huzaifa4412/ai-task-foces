@@ -11,11 +11,15 @@ import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
-export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Home for Solid Pro",
+export const metadata = {
+  title: "AI-Task-Forces",
+  description: "Where AI meets your business needs ",
+  authors: [
+    { name: "Huzaifa Mukhtar", url: "https://https://github.com/Huzaifa4412" },
+  ],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function Home() {
@@ -33,7 +37,6 @@ export default function Home() {
       <Testimonial />
       <Pricing />
       <Contact />
-      {/* <Blog /> */}
     </main>
   );
 }
