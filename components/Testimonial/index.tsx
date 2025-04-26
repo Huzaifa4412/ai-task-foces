@@ -15,7 +15,7 @@ const Testimonial = () => {
   return (
     <>
       <section>
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+        <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader
@@ -45,7 +45,7 @@ const Testimonial = () => {
           whileInView="visible"
           transition={{ duration: 1, delay: 0.1 }}
           viewport={{ once: true }}
-          className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
+          className="animate_top max-w-c-1235 mx-auto mt-15 px-4 md:px-8 xl:mt-20 xl:px-0"
         >
           {/* <!-- Slider main container --> */}
           <div className="swiper testimonial-01 mb-20 pb-22.5">
@@ -71,6 +71,7 @@ const Testimonial = () => {
                   slidesPerView: 2,
                 },
               }}
+              className="cursor-grab"
             >
               {testimonialData.map((review) => (
                 <SwiperSlide key={review?.id}>
